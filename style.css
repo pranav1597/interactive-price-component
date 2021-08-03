@@ -75,12 +75,12 @@ body{
     margin-top: 1em;
 }
 
-.slider{
+input[type="range"] {
     -webkit-appearance: none;
     appearance: none;
     width: 90%;
     height: 10px;
-    background: linear-gradient(90deg,rgb(234, 238, 251) 60% ,rgb(234, 238, 251) 40%);
+    background: linear-gradient(90deg,rgb(165, 243, 235) 50% ,rgb(165, 243, 235) 100%);
     border-radius: 10px;
     outline: none;
     opacity: 0.7;
@@ -88,14 +88,14 @@ body{
     transition: opacity .2s;
 }
 
-.slider:hover{
+input[type="range"]{
     opacity: 1;
 }
 
 
 
 
-.slider::-webkit-slider-thumb {
+input[type="range"]::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
     width: 30px;
@@ -302,6 +302,14 @@ body{
           display: flex;
           justify-content: center;
           align-items: center;
+      }
+
+      .plan-section{
+          /* border: 2px solid red; */
+          justify-content: space-between;
+          width: 50%;
+          margin: auto;
+          margin-top: 2em;
       }
 
       .discount{
