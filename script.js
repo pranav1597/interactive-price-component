@@ -62,6 +62,10 @@ slider.addEventListener("mousemove", function(){
 const priceDiscount = function(discount){
     if(checkbox.checked){
         discount = (discount - (discount * .25)) * 12; 
+        plan.innerHTML = '/ year';
+    }
+    else{
+        plan.innerHTML = '/ month';
     }
 
     return discount.toFixed(2);
