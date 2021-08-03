@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Interactive pricing component</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+<script src="script.js" defer></script>
+
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="intro">
+      <div class="intro-heading">Simple, traffic-based pricing</div>
+      <div class="detail-flex">
+        <div class="intro-detail">Sign-up for our 30-day trial.</div>
+        <div class="intro-detail">No credit card required.</div>
+      </div>
+    </div>
+
+    <div class="card">
+
+      <div data-page class="pageviews">100k pageviews</div>
+
+      <div class="slider-container">
+        <input type="range" min="8" max="36" value="20" step="4" class="slider" id="slide">
+      </div>
+
+      <div class="slider-output">
+        <div data-price class="slider-price">$16</div>
+        <div data-plan class="slider-plan">/ month</div>
+      </div>
+
+      <div class="plan-section">
+        <div class="monthly-plan">Monthly Billing</div>
+
+        <div class="toggle-button">
+          <input type="checkbox" class="checkbox" id="checkbox">
+          <label for="checkbox" class="label" id="label">
+            <div class="ball"></div>
+          </label>
+        </div>
+
+        <div class="yearly-plan">Yearly Billing <span class="discount">-25%</span></div>
+
+      </div> <!--end of plan section class div-->
+
+      <div class="trial-flex">
+        
+        <div class="plan-info">
+
+          <div class="plan-flex">
+            <img src="images/icon-check.svg" alt="icon-check" class="check">
+            <div class="plan-desc">Unlimited websites</div>
+          </div>
+
+          <div class="plan-flex">
+            <img src="images/icon-check.svg" alt="icon-check" class="check">
+            <div class="plan-desc">100% data ownership</div>
+          </div>
+
+          <div class="plan-flex">
+            <img src="images/icon-check.svg" alt="icon-check" class="check">
+            <div class="plan-desc">Email reports</div>
+          </div>
+
+        </div> <!--end of plan-info class div-->
+
+        <div class="btn-flex">
+          <div class="trial-btn">Start my trial</div>
+        </div>
+
+      </div>
+
+    </div> <!-- end of card class div-->
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/pranav1597/interactive-price-component" target="_blank">Pranav</a>.
+    </div>
+
+  </div> <!--end of container class div-->
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+</body>
+</html>
